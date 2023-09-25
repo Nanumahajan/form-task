@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+Controlled React Form
+This is a simple controlled form built using React. It allows users to submit their username, email, password, and confirm password. The form includes validation for each field, and it displays error messages when the input data doesn't meet the required criteria.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Controlled form: The form fields are controlled components, which means their values are managed by React state.
 
-## Available Scripts
+Form validation: The form includes client-side validation for the following fields:
 
-In the project directory, you can run:
+Username: Required, minimum length of 3 characters.
+Email: Required and must be in a valid email format.
+Password: Required, minimum length of 6 characters.
+Confirm Password: Must match the password.
+Submission handling: When the form is submitted without validation errors, the data is logged to the console, and a pretty-printed JSON representation of the data is displayed on the page.
 
-### `npm start`
+Technologies Used
+React: The front-end framework for building the user interface.
+useState: React hook used to manage the form data, errors, and submitted data.
+CSS: Styling for the form components is done using CSS.
+JavaScript: Used for form validation and event handling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Uncontrolled React Form
+This is an uncontrolled form implemented in React. Unlike controlled forms, uncontrolled forms do not rely on React state to manage form input values. Instead, it directly accesses the DOM elements using refs for form input values.
 
-### `npm test`
+Features
+Uncontrolled form: The form fields in this implementation are uncontrolled components, meaning their values are managed directly through DOM refs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Form validation: The form includes client-side validation for the following fields:
 
-### `npm run build`
+Username: Required, must be at least 3 characters long, and not more than 20 characters.
+Email: Required and must be in a valid email format.
+Password: Required and must be at least 6 characters long.
+Confirm Password: Must match the password.
+Submission handling: When the form is submitted without validation errors, the data is displayed as a pretty-printed JSON object, and the form fields are cleared.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Technologies Used
+React: The front-end framework for building the user interface.
+useRef: React hook used to create refs for accessing DOM elements.
+CSS: Styling for the form components is done using CSS.
+JavaScript: Used for form validation and event handling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author: Ritesh
